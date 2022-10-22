@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import csv
 
-with open('MLS® & Real Estate Map _ REALTOR.ca.html', 'r', encoding='utf-8') as f:
+with open("MLS® & Real Estate Map _ REALTOR.ca.html", 'r', encoding='utf-8') as f:
     html = f.read()
 
 soup = BeautifulSoup(html, features='lxml')
