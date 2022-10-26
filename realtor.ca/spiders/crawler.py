@@ -31,7 +31,7 @@ while True:
         a = div.find('a', class_='blockLink listingDetailsLink')
         href = a.get('href')
         data = div.find('a').get('data-value')
-        with open('data.csv', 'a', newline='') as f:
+        with open('../data/data.csv', 'a', newline='') as f:
             writer = csv.writer(f)
             print([data, href])
             writer.writerow([data, href])
