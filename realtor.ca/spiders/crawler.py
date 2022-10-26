@@ -43,7 +43,8 @@ def parse_price_range(driver):
 
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
-for i in range(16, 80):
+start = 16
+for i in range(start, 80):
     min_price = i*25000
     max_price = (i+1)*25000
     url = f"https://www.realtor.ca/map#ZoomLevel=10&Center=51.028188%2C-114.086920&LatitudeMax=51.35738&LongitudeMax=-113.44010&LatitudeMin=50.69664&LongitudeMin=-114.73374&view=list&Sort=1-D&PGeoIds=g30_c3nfkdtg&GeoName=Calgary%2C%20AB&PropertyTypeGroupID=1&PropertySearchTypeId=1&TransactionTypeId=2&PriceMin={min_price}&PriceMax={max_price}&Currency=CAD"
@@ -52,7 +53,7 @@ for i in range(16, 80):
     driver.get(url)
     time.sleep(2)
     driver.get(url)
-    if i == 0:
+    if i == start:
         input('Click me!')
     parse_price_range(driver)
     time.sleep(3)
