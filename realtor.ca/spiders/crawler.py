@@ -19,8 +19,8 @@ def scroll_to_bottom(driver, pause_time):
 
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
-driver.get(
-    "https://www.realtor.ca/map#view=list&Sort=6-D&GeoIds=g30_c3nfkdtg&GeoName=Calgary%2C%20AB&PropertyTypeGroupID=1&PropertySearchTypeId=1&TransactionTypeId=2&Currency=CAD")
+url = "https://www.realtor.ca/map#view=list&Sort=6-D&GeoIds=g30_c3nfkdtg&GeoName=Calgary%2C%20AB&PropertyTypeGroupID=1&PropertySearchTypeId=1&TransactionTypeId=2&Currency=CAD"
+driver.get(url)
 input('Click me!')
 
 while True:
