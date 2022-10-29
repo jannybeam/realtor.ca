@@ -1,1 +1,0 @@
-geetest_1666081969085({"status": "error", "error": "old challenge", "user_error": "\u041e\u0448\u0438\u0431\u043a\u0430", "error_code": "error_02"})
